@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Location"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/brokenwhite">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdv_kosambi"
+        android:onClick="kosambi"
+        android:backgroundTint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gbr_lct1"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gbr_location" />
+
+            <TextView
+                android:id="@+id/psr_kosambi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/gbr_lct1"
+                android:text="Pasar Kosambi"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latobold"
+                />
+
+            <TextView
+                android:id="@+id/des_kosambi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/psr_kosambi"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@id/gbr_lct1"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Jl. A. Yani No.221-223, Kb. Pisang, Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40112"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdv_cikapundung"
+        android:layout_below="@id/cdv_kosambi"
+        android:backgroundTint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="15dp"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/gbr_lct2"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gbr_location" />
+
+        <TextView
+            android:id="@+id/psr_cikapundung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/gbr_lct2"
+            android:text="Pasar Kota Kembang Unit Cikapundung"
+            android:textColor="@color/black"
+            android:fontFamily="@font/latobold"
+            />
+
+        <TextView
+            android:id="@+id/des_cikapundung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/psr_cikapundung"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@id/gbr_lct2"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="Jl. Dalem Kaum No.17, Balonggede, Kec. Regol, Kota Bandung, Jawa Barat 40251"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lato"
+            />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdv_batununggal"
+        android:layout_below="@id/cdv_cikapundung"
+        android:backgroundTint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gbr_lct3"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gbr_location" />
+
+            <TextView
+                android:id="@+id/psr_batununggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/gbr_lct3"
+                android:text="Pasar Batununggal Indah Modern Market"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latobold"
+                />
+
+            <TextView
+                android:id="@+id/des_batununggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/psr_batununggal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@id/gbr_lct3"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Jl. Batununggal Indah II No.48, Mengger, Kec. Bandung Kidul, Kota Bandung, Jawa Barat 40267"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdv_bermatabat"
+        android:layout_below="@id/cdv_batununggal"
+        android:backgroundTint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gbr_lct4"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gbr_location" />
+
+            <TextView
+                android:id="@+id/psr_bermatabat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/gbr_lct4"
+                android:text="Pasar Bermartabat. PD - Kota Bandung"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latobold"
+                />
+
+            <TextView
+                android:id="@+id/des_bermatabat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/psr_bermatabat"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@id/gbr_lct4"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Jl. Jurang No.1, Pasteur, Kec. Sukajadi, Kota Bandung, Jawa Barat 40161"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdv_emung"
+        android:layout_below="@id/cdv_bermatabat"
+        android:backgroundTint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gbr_lct5"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gbr_location" />
+
+            <TextView
+                android:id="@+id/psr_emung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/gbr_lct5"
+                android:text="Pasar Emung"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latobold"
+                />
+
+            <TextView
+                android:id="@+id/des_emung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/psr_emung"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@id/gbr_lct5"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Jl. Emung No.43, Burangrang, Kec. Lengkong, Kota Bandung, Jawa Barat 40262"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdv_andir"
+        android:layout_below="@id/cdv_emung"
+        android:backgroundTint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gbr_lct6"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gbr_location" />
+
+            <TextView
+                android:id="@+id/psr_andir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/gbr_lct6"
+                android:text="Pasar Andir Bandung"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latobold"
+                />
+
+            <TextView
+                android:id="@+id/des_andir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/psr_andir"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@id/gbr_lct6"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Jl. Waringin No.24, Ciroyom, Kec. Andir, Kota Bandung, Jawa Barat 40182"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdv_cihapit"
+        android:layout_below="@id/cdv_andir"
+        android:backgroundTint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gbr_lct7"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gbr_location" />
+
+            <TextView
+                android:id="@+id/psr_cihapit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/gbr_lct7"
+                android:text="Pasar Cihapit"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latobold"
+                />
+
+            <TextView
+                android:id="@+id/des_cihapit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/psr_cihapit"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@id/gbr_lct7"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Jl. Cihapit No.32, Cihapit, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40114"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdv_traditional"
+        android:layout_below="@id/cdv_andir"
+        android:backgroundTint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gbr_lct8"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gbr_location" />
+
+            <TextView
+                android:id="@+id/psr_traditional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/gbr_lct8"
+                android:text="Traditional Market"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latobold"
+                />
+
+            <TextView
+                android:id="@+id/des_traditional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/psr_traditional"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@id/gbr_lct8"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text=" 3JJ3+W7P, Kebon Jeruk, Andir, Bandung City, West Java 40181 "
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdv_cicadas"
+        android:layout_below="@id/cdv_traditional"
+        android:backgroundTint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/gbr_lct9"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gbr_location" />
+
+        <TextView
+            android:id="@+id/psr_cicadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/gbr_lct9"
+            android:text="Pasar Cicadas, Kota Bandung"
+            android:textColor="@color/black"
+            android:fontFamily="@font/latobold"
+            />
+
+        <TextView
+            android:id="@+id/des_cicadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/psr_cicadas"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@id/gbr_lct9"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="3JQQ+HG9, Jl. A. Yani, Cicadas, Kec. Cibeunying Kidul, Kota Bandung, Jawa Barat 40121"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lato"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdv_suci"
+        android:layout_below="@id/cdv_cicadas"
+        android:backgroundTint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gbr_lct10"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gbr_location" />
+
+            <TextView
+                android:id="@+id/psr_suci"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/gbr_lct10"
+                android:text="Pasar Suci Bandung"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latobold"
+                />
+
+            <TextView
+                android:id="@+id/des_suci"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/psr_suci"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@id/gbr_lct10"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="4J2H+55H, Sukaluyu, Cibeunying Kaler, Bandung City, West Java 40123"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdv_baru"
+        android:layout_below="@id/cdv_suci"
+        android:backgroundTint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gbr_lct11"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gbr_location" />
+
+            <TextView
+                android:id="@+id/psr_baru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/gbr_lct11"
+                android:text="Pasar Baru"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latobold"
+                />
+
+            <TextView
+                android:id="@+id/des_baru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/psr_baru"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@id/gbr_lct11"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Jl. Otto Iskandar Dinata No.152, Kb. Jeruk, Kec. Andir, Kota Bandung, Jawa Barat 40181"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdv_gempol"
+        android:layout_below="@id/cdv_baru"
+        android:backgroundTint="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gbr_lct12"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gbr_location" />
+
+            <TextView
+                android:id="@+id/psr_gempol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/gbr_lct12"
+                android:text="Gempol Market"
+                android:textColor="@color/black"
+                android:fontFamily="@font/latobold"
+                />
+
+            <TextView
+                android:id="@+id/des_gempol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/psr_gempol"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@id/gbr_lct12"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Citarum, Bandung Wetan, Bandung City, West Java 40115"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdv_ciroyom"
+            android:layout_below="@id/cdv_gempol"
+            android:backgroundTint="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gbr_lct13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="57dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gbr_location" />
+
+                <TextView
+                    android:id="@+id/psr_ciroyom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/gbr_lct13"
+                    android:text="Pasar Ciroyom"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/latobold"
+                    />
+
+                <TextView
+                    android:id="@+id/des_ciroyom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/psr_ciroyom"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@id/gbr_lct13"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="Jl. Ciroyom Bar., Ciroyom, Kec. Andir, Kota Bandung, Jawa Barat 40172"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/lato"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdv_cikutra"
+            android:layout_below="@id/cdv_ciroyom"
+            android:backgroundTint="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gbr_lct14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="57dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gbr_location" />
+
+                <TextView
+                    android:id="@+id/psr_cikutra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/gbr_lct14"
+                    android:text="Pasar Cikutra"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/latobold"
+                    />
+
+                <TextView
+                    android:id="@+id/des_cikutra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/psr_cikutra"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@id/gbr_lct14"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="Jl. Cikutra No.88-94, Cikutra, Kec. Cibeunying Kidul, Kota Bandung, Jawa Barat 40124"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/lato"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdv_astana"
+            android:layout_below="@id/cdv_cikutra"
+            android:backgroundTint="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gbr_lct15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="57dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gbr_location" />
+
+                <TextView
+                    android:id="@+id/psr_astana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/gbr_lct15"
+                    android:text="Pasar Astana Anyar"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/latobold"
+                    />
+
+                <TextView
+                    android:id="@+id/des_astana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/psr_astana"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@id/gbr_lct15"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="Jl. Astana Anyar No.179, Nyengseret, Kec. Astanaanyar, Kota Bandung, Jawa Barat 40242"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/lato"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdv_cikawao"
+            android:layout_below="@id/cdv_astana"
+            android:backgroundTint="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gbr_lct16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="57dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gbr_location" />
+
+                <TextView
+                    android:id="@+id/psr_cikawao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/gbr_lct16"
+                    android:text="Pasar Cikawao"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/latobold"
+                    />
+
+                <TextView
+                    android:id="@+id/des_cikawao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/psr_cikawao"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@id/gbr_lct16"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="Jl. Cikawao Dalam I No.62, Paledang, Kec. Lengkong, Kota Bandung, Jawa Barat 40261"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/lato"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdv_ancol"
+            android:layout_below="@id/cdv_cikawao"
+            android:backgroundTint="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gbr_lct17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="57dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gbr_location" />
+
+                <TextView
+                    android:id="@+id/psr_ancol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@id/gbr_lct17"
+                    android:text="Traditional Market Ancol Bandung"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/latobold"
+                    />
+
+                <TextView
+                    android:id="@+id/des_ancol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/psr_ancol"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toEndOf="@id/gbr_lct17"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="Jl. Karapitan No.310, Ancol, Kec. Regol, Kota Bandung, Jawa Barat 40251"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/lato"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

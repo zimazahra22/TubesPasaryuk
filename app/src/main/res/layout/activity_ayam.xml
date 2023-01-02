@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AyamActivity"
+    android:background="@color/brokenwhite">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:id="@+id/back"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daging Ayam"
+        android:textSize="24sp"
+        android:layout_toRightOf="@+id/back"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ayam"
+        android:id="@+id/ayam"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi"
+        android:layout_below="@+id/ayam"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/des_ayam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daging ayam mengandung protein, kalsium, dan fosfor.
+Sehingga membantu menjaga kesehatan tulang dan gigi serta memperbaiki sel tubuh yang rusak."
+        android:layout_below="@id/ayam"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/des_ayam"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/lok_har"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lokasi                         Harga"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list1"
+            android:layout_below="@id/lok_har"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Baru                Rp.37.500"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list2"
+            android:layout_below="@id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Ciroyom         Rp.37.550"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list3"
+            android:layout_below="@id/list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Cikawao        Rp.38.000"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

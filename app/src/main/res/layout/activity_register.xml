@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg"
+    >
+
+    <ImageView
+        android:id="@+id/r_pnh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r_pnh"
+        android:layout_marginBottom="50dp"
+        android:text="Welcome to PasarYuk!"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/latobold"
+        android:textSize="27sp"
+        android:id="@+id/r_welcome"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/r_welcome"
+        android:padding="30dp"
+        android:id="@+id/r_kolom"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/kolom"
+            android:hint="Enter your full name"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            android:paddingLeft="13dp"
+            android:id="@+id/rk_name"
+            android:fontFamily="@font/lato"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/kolom"
+            android:layout_marginTop="10dp"
+            android:hint="Enter your email"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            android:paddingLeft="13dp"
+            android:id="@+id/rk_email"
+            android:fontFamily="@font/lato"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/kolom"
+            android:layout_marginTop="10dp"
+            android:hint="Create password"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            android:paddingLeft="13dp"
+            android:id="@+id/rk_pw"
+            android:fontFamily="@font/lato"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/kolom"
+            android:layout_marginTop="13dp"
+            android:hint="Confirm password"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            android:paddingLeft="13dp"
+            android:id="@+id/rk_pw2"
+            android:fontFamily="@font/lato"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tombol"
+        android:hint="Sign Up"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/r_kolom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/latobold"
+        android:id="@+id/r_btn"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/r_btn"
+        android:gravity="center"
+        android:layout_marginTop="13dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:fontFamily="@font/lato"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/r_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lato"
+            android:text=" Sign in"
+            android:textColor="@color/green"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

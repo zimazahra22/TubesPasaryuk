@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BumbuActivity"
+    android:background="@color/brokenwhite">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:id="@+id/back"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bumbu"
+        android:textSize="24sp"
+        android:layout_toRightOf="@+id/back"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/kayumanis"
+        android:id="@+id/img_kayumanis" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kayu Manis"
+        android:layout_below="@+id/img_kayumanis"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="60dp" />
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="205dp"
+        android:src="@drawable/merica"
+        android:id="@+id/img_merica"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Merica"
+        android:layout_below="@+id/img_merica"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="270dp" />
+
+
+</RelativeLayout>

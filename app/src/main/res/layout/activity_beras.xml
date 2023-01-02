@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BerasActivity"
+    android:background="@color/brokenwhite">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:id="@+id/back"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beras"
+        android:textSize="24sp"
+        android:layout_toRightOf="@+id/back"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/rice"
+        android:id="@+id/rice"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi"
+        android:layout_below="@+id/rice"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/des_beras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beras adalah bagian bulir padi (gabah) yang telah dipisah dari sekam (bagian yang ditutupi) dan lemma (bagian yang menutupi). Hasil panen padi, gabah ditumbuk dengan lesung atau digiling sehingga bagian luarnya (kulit gabah) terlepas dari isinya. Bagian isi inilah, yang berwarna putih, kemerahan, ungu, atau bahkan hitam, yang disebut beras. Beras juga mengandung protein, vitamin (terutama pada bagian aleuron), mineral, dan air.
+"
+        android:layout_below="@id/rice"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/des_beras"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/lok_har"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lokasi                                Harga"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list1"
+            android:layout_below="@id/lok_har"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Astana Anyar       Rp.12.000"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list2"
+            android:layout_below="@id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Cikutra                   Rp.12.000"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list3"
+            android:layout_below="@id/list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Emung                   Rp.12.000"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

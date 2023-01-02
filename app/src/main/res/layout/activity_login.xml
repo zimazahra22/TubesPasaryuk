@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg"
+    >
+
+    <ImageView
+        android:id="@+id/l_pnh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l_pnh"
+        android:layout_marginBottom="20dp"
+        android:text="Welcome to PasarYuk!"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/latobold"
+        android:textSize="27sp"
+        android:id="@+id/l_welcome"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l_welcome"
+        android:src="@drawable/icon"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/l_icon"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/l_icon"
+        android:padding="30dp"
+        android:id="@+id/l_kolom"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/kolom"
+            android:layout_marginTop="10dp"
+            android:hint="Enter your email"
+            android:textColorHint="@color/black"
+            android:paddingLeft="13dp"
+            android:fontFamily="@font/lato"
+            android:id="@+id/lk_email"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/kolom"
+            android:layout_marginTop="10dp"
+            android:hint="Enter your password"
+            android:textColorHint="@color/black"
+            android:paddingLeft="13dp"
+            android:fontFamily="@font/lato"
+            android:id="@+id/lk_pw"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom"
+        android:text="Forgot password?"
+        android:textColor="@color/green"
+        android:fontFamily="@font/lato"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/l_kolom"
+        android:id="@+id/f_pw"
+        />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tombol"
+        android:hint="Log in"
+        android:textSize="16sp"
+        android:textColorHint="@color/white"
+        android:layout_below="@+id/f_pw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/latobold"
+        android:id="@+id/l_btn"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/l_btn"
+        android:gravity="center"
+        android:layout_marginTop="13dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don’t have an account?"
+            android:fontFamily="@font/lato"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/l_login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lato"
+            android:text=" Sign up"
+            android:textColor="@color/green"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

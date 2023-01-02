@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TempeActivity"
+    android:background="@color/brokenwhite">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:id="@+id/back"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tempe"
+        android:textSize="24sp"
+        android:layout_toRightOf="@+id/back"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/tempe"
+        android:id="@+id/tempe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi"
+        android:layout_below="@+id/tempe"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tempe merupakan salah satu sumber protein nabati terbaik. Selain itu, tempe juga mengandung vitamin B12 dan 9 asam amino esensial yang dibutuhkan tulang dan otot."
+        android:layout_below="@id/tempe"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/des_tempe"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/des_tempe"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/lok_har"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lokasi                         Harga"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list1"
+            android:layout_below="@id/lok_har"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Baru                Rp.10.500"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list2"
+            android:layout_below="@id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Ciroyom         Rp.12.000"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list3"
+            android:layout_below="@id/list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Cikawao        Rp.11.500"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

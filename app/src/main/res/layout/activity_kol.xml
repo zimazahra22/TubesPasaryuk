@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KolActivity"
+    android:background="@color/brokenwhite">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:id="@+id/back"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembang Kol"
+        android:textSize="24sp"
+        android:layout_toRightOf="@+id/back"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/kol"
+        android:id="@+id/kol"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi"
+        android:layout_below="@+id/kol"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembang kol memiliki kandungan vitamin C dan K yang lebih tinggi dari brokoli. Selain itu, kembang kol juga kaya akan kandungan asam pantotenat, vitamin B, dan serat.
+Mengonsumsi kembang kol dapat membantu menurunkan berat badan, menurunkan resiko kanker, meningkatkan kekuatan tulang, meningkatkan kesehatan pencernaan, dan lain-lain."
+        android:layout_below="@id/kol"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/des_kol"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/des_kol"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/lok_har"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lokasi                            Harga"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list1"
+            android:layout_below="@id/lok_har"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Bermartabat     Rp.9.000"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list2"
+            android:layout_below="@id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Ciroyom             Rp.9.000"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list3"
+            android:layout_below="@id/list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Cikawao            Rp.9.500"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelurActivity"
+    android:background="@color/brokenwhite">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:id="@+id/back"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telur Ayam"
+        android:textSize="24sp"
+        android:layout_toRightOf="@+id/back"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/telur"
+        android:id="@+id/telur"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi"
+        android:layout_below="@+id/telur"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telur ayam negeri mengandung kalsium, vitamin A, vitamin B1. Mengkonsumsi telur ayam negeri selain dapat meningkatkan energi juga dapat membantu proses pembentukan otot, sampai dapat mencegah katarak."
+        android:layout_below="@id/telur"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/des_telur"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/des_telur"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/lok_har"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lokasi                                Harga"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list1"
+            android:layout_below="@id/lok_har"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Astana Anyar       Rp.27.500"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list2"
+            android:layout_below="@id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Cikutra                   Rp.27.000"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/list3"
+            android:layout_below="@id/list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasar Emung                   Rp.26.500"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
